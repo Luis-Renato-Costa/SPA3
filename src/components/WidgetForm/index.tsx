@@ -3,6 +3,9 @@ import { useState } from "react";
 import bugImageUrl from '../../assets/bug.svg';
 import ideaImageUrl from '../../assets/idea.svg';
 import thoughtImageUrl from '../../assets/thought.svg';
+
+//
+
 import { FeedbackTypeStep } from './Steps/FeedbackTypeStep';
 import { FeedbackContentStep } from "./Steps/FeedbackContentStep";
 import { FeedbackSuccessStep } from "./Steps/FeedbackSuccessStep";
@@ -21,6 +24,13 @@ export const feedbackTypes = {
         image:{
             source:ideaImageUrl,
             alt:'Imagem de uma lâmpada'
+        },
+    },
+    DOUBT:{
+        title:'Doubt',
+        image:{
+            source:"../../assets/doubt.jpeg",
+            alt:'Imagem de uma interrogação'
         },
     },
     OTHER:{
@@ -62,7 +72,7 @@ export function WidgetForm(){
             ) }
             
             <footer className="text-xs text-neutral-400">
-                Feito pela <a className="underline underline-offset-2" target="_blank" href="http://rocketseat.com.br">Rocketseat</a>
+                Feito pelo <a className="underline underline-offset-2" target="_blank" href="https://github.com/Luis-Renato-Costa/SPA2">Luís Renato</a>
             </footer>
         </div>
     );
